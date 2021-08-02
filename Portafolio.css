@@ -52,6 +52,7 @@ body{
 
 
 
+
 /*Historia Laboral*/
 
 .main-timeline:after{
@@ -208,7 +209,18 @@ body{
     animation: reverse progress-bar-stripes 0.40s linear infinite, animate-positive 1s;
 }
 
-/*Galeria*/
+/*Proyectos*/
+@media screen and (min-width: 600px) {
+  .boton {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
 .content-wrapper {
   margin: 0 auto;
   max-width: 1200px;
@@ -286,6 +298,16 @@ body{
 .news-card__title {
     transition: color 1s ease;
     margin-bottom: .5rem;
+  }
+
+.news-card__title2 {
+    transition: color 1s ease;
+    margin-bottom: -.5rem;
+	text-align: center;
+	background: #07B8D5;
+	border-radius: 90px;
+	height: 100%;
+	width: 100%;
   }
 
 .news-card__post-date {
@@ -407,6 +429,7 @@ body{
   border: none;
   width:200px;
   cursor: pointer;
+  border-radius: 30px;
 }
 
 /*Teclado*/
