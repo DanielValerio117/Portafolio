@@ -12,66 +12,91 @@
 </head>
 
 <body>
-	
-	   <nav class="navbar navbar-expand-lg navbar-light bgazul">
-  <div class="container-fluid">
-	  <img src="Img/ito.png" alt="" width="30" height="24">
-    <a class="navbar-brand" href="#">Daniel</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Sobre mi</a>
-        </li>
-		  <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Habilidades</a>
-        </li>
-		  <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Contacto</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-	<div class="container-fluid bgazul d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+			<nav class="sidebar">
+				<div class="dismiss">
+					<i class="fas fa-arrow-left"></i>
+				</div>
+				
+				<div class="logo">
+					<img class="w-100" src="Img/ito.png">
+				</div>
+				
+				<ul class="list-unstyled menu-elements">
+					<li class="active">
+						<a class="scroll-link" style="text-decoration: none" href="#home"><i class="fas fa-home"></i> Inicio</a>
+					</li>
+					<li>
+						<a class="scroll-link" style="text-decoration: none"  href="#sobremi"><i class="fas fa-user"></i> Sobre mi</a>
+					</li>
+					<li>
+						<a class="scroll-link" style="text-decoration: none" href="#skills"><i class="fas fa-cog"></i> Software</a>
+					</li>
+					<li>
+						<a class="scroll-link" style="text-decoration: none" href="#proyectos"><i class="fas fa-pencil-alt"></i> Proyectos</a>
+					</li>
+					<li>
+						<a class="scroll-link" style="text-decoration: none" href="#contacto"><i class="fas fa-envelope"></i> Contacto</a>
+					</li>
+				</ul>
+				
+				<div class="to-top">
+					<a class="btn btn-primary btn-customized-3" href="#" role="button">
+	                    <i class="fas fa-arrow-up"></i> Top
+	                </a>
+				</div>
+				
+				<div class="dark-light-buttons">
+					<a class="btn btn-primary btn-customized-4 btn-customized-dark" href="#" role="button">Dark</a>
+					<a class="btn btn-primary btn-customized-4 btn-customized-light" href="#" role="button">Light</a>
+				</div>
+			</nav>
+			<div class="overlay"></div>
+			<a class="btn bgazul open-menu" href="#" role="button">
+                    <i class="fas fa-align-left"></i>
+                </a>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<a href="https://wa.me/522722831201?text=Hola%20me%20gustaría%20contactarte." class="float wow animated rotateInDownLeft" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
+	<div class="page container-fluid bgazul d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
 		<div class="ocean">
 		<div class="wave"></div>
   		<div class="wave"></div>
 		</div>
-        <div class="container">
-            <div class="row align-items-center">
-               
-                <div class="col-lg-7 text-center text-lg-left">
+		<div class="container">
+                <div class="row flex align-items-center">
+                    <div class="col-lg-7 text-center text-lg-left">
                     <h3 class="text-white font-weight-normal mb-3  wow animated bounceInDown  data-wow-duration="3s" ">Hola, mi nombre es</h3>
                     <h1 class="display-3 text-uppercase text-primary mb-2 wow animated bounceInUp data-wow-duration="3s"" style="-webkit-text-stroke: 3px #ffffff;">Daniel Valerio Cruz</h1><br>
                      <h2 class="text-white font-weight-normal mb-3 wow animated bounceInUp">Ing. Sistemas Computacionales</h2>
-					<h1><a href="" class="typewrite" style="color:#fff; text-decoration: none;" data-period="2000" data-type='[ "Desarrollador Web", "Programador", "Egresado", "Responsable" ]'><span class="wrap"></span></a>
+					<h1><a href="" class="typewrite" style="color:#fff; text-decoration: none;" data-period="2000" data-type='[ "Desarrollador Web", "Programador", "Creativo", "Responsable", "Paciente", "Honesto", "Organizado" ]'><span class="wrap"></span></a>
 					</h1>
                     <div class=" align-items-center justify-content-center justify-content-lg-start pt-3">
-						<a href="CVU Daniel Valerio Cruz 2021.pdf" class="button wow animated flip" style="text-decoration: none;">Desacrgar Cv</a></div>
+						<a href="CVU_Daniel_Valerio_Cruz_2021.pdf" class="button wow animated flip" style="text-decoration: none;">Descargar Cv</a></div>
 						
                     </div>
-                </div>
-                <div class="col-lg-5 px-8 pl-lg-0 pb-5 pb-lg-4 about-img" style="padding: 40px">
-                    <img class="img-fluid w-100 rounded-circle shadow-sm wow animated rotateIn " src="Img/daniel1.jpg" alt="">
+               
+                        
+                   
+
+                    <div class="col-lg-5" style="padding: 40px">
+                        <img class="img-fluid w-100 rounded-circle shadow-sm wow animated rotateIn " src="Img/daniel1.jpg" alt="">
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </div>
+	</div>
 	
-	
-	<div class="container" >
+	<div class="container" id="sobremi" >
 		<hr>
-	<h2 class="wow animated slideInLeft">Acerca de mi</h2>
+	<h1 class="wow animated slideInLeft">Acerca de mi</h1>
 		
-          <p class="wow animated slideInDown">Soy una persona amante de la tecnología me gusta estar al tanto de las nuevas tecnologías de desarrollos en el ámbito de creación, desarrollo e innovación me desempeño bien trabajando en equipo me gusta aprender cosas nuevas soy muy social y proactivo y me gustaría adquirir más conocimientos y experiencias.</p>
-		<div class="row">
+          <h3 class="wow animated slideInDown" style="text-align: justify;">Soy una persona amante de la tecnología me gusta estar al tanto de las nuevas tecnologías de desarrollos en el ámbito de creación, desarrollo e innovación me desempeño bien trabajando en equipo me gusta aprender cosas nuevas, soy muy social y proactivo.</h3>
+		<div class="row" style="padding-top: 3%;">
 		<div class="col-md-6 wow animated slideInLeft">
 			<h3><i class="fas fa-birthday-cake"></i> 25 Agosto 1997</h3>
-			<h3><i class="fas fa-phone-alt"></i> +272 283 1201</h3>
-			<h3><i class="fas fa-map-marker-alt"></i> Orizaba. Veracruz</h3>
+			<h3><i class="fas fa-phone-alt"></i> 272 283 1201</h3>
+			<h3><i class="fas fa-map-marker-alt"></i> Av. Jalisco #126 Colonia Ricardo Flores. CP:94732</h3>
 			<h4><i class="fas fa-envelope"></i> danielvalerioc@outlook.es</h4>
 			</div>
 		<div class="col-md-6 wow animated slideInRight">
@@ -80,7 +105,8 @@
 			<h3><i class="fab fa-github-square"></i><a href="https://github.com/DanielValerio117" style="text-decoration: none; color: black;"> Daniel Valerio117  </a></h3>
 			</div>
 		</div>
-			<hr>	
+			<hr>
+		<div id="skills"></div>
 		<h1 class="wow animate pulse">Competencias</h1>
 		
 		<span style="font-size: 15vh; color: orangered;">
@@ -116,7 +142,7 @@
 		
 		 <div class="row">
         <div class="col-md-12">
-            <h3 class="progress-title wow animate fadeInLeftBig"></h3>
+            <h3 class="progress-title wow animate fadeInLeftBig"/>HTML</h3>
             <div class="progress">
                 <div class="progress-bar progress-bar-striped active " style="width:85%; background-color: orangered;" >
                     <div class="progress-value">85%</div>
@@ -164,18 +190,13 @@
                     <div class="progress-value">70%</div>
                 </div>
             </div>
-			<h3 class="progress-title wow animated fadeInLeftBig" data-wow-duration="4s">WORD</h3>
+			<h3 class="progress-title wow animated fadeInLeftBig" data-wow-duration="4s">PAQUETERÍA OFFICE</h3>
             <div class="progress">
                 <div class="progress-bar progress-bar-striped active" style="width:80%;" >
                     <div class="progress-value">80%</div>
                 </div>
             </div>
-			<h3 class="progress-title wow animated fadeInRightBig" data-wow-duration="4s">POWERPOINT</h3>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped active" style="width:85%; background-color: orange;" >
-                    <div class="progress-value">85%</div>
-                </div>
-            </div>
+			
 			
         </div>
     </div>
@@ -191,8 +212,8 @@
                         <div class="timeline-icon">
                             <img src="Img/ito.png" alt="" width="90" height="80">
                         </div>
-						<h1 class="title">Instituto Tecnologico de Orizaba</h1>
-                        <h3 class="title">Tecnico Informatico</h3>
+						<h1 class="title">Instituto Tecnológico de Orizaba</h1>
+                        <h3 class="title">Técnico informático</h3>
                         <p class="description">
                             <ul>
 						<li>Aplicación de lenguajes de diseño y marcado como HTML, CSS y JavaScript.</li>
@@ -201,7 +222,7 @@
 						<li>Elaboración de planes de usabilidad, efectos visuales y velocidad de carga de sitios web.</li>	
 						<li>Diseño de la interfaz e interacción de páginas web.</li>
 						<li>Ejecución de pruebas de usabilidad y accesibilidad.</li>
-						<li>Completó un rediseño total de páginas web existentes para mejorar la navegación, mejorar los elementos visuales y fortalecer la clasificación de motores de búsqueda</li>
+						<li>Rediseño total de páginas web existentes para mejorar la navegación, mejorar los elementos visuales y fortalecer la clasificación de motores de búsqueda</li>
 						</ul>
 						</p>
                         </div>
@@ -235,7 +256,7 @@
 	
 	
 	<hr>
-	<h1 class="wow animate flip">Proyectos</h1>
+	<h1 id="proyectos" class="wow animate flip">Proyectos</h1>
 	<div class="content-wrapper">
  
   <div class="news-card wow animate flipInX">
@@ -245,7 +266,7 @@
       <h2 class="news-card__title">Integriapp Web</h2>
       <div class="news-card__post-date">Proyecto desarrollado</div>
       <div class="news-card__details-wrapper">
-        <p class="news-card__excerpt">Pagina web desarrollada para la empresa Imtegriapp S.A de C.V </p>
+        <p class="news-card__excerpt">Página web desarrollada para la empresa Imtegriapp S.A de C.V como parte de proyecto de Residencias Profesionales.</p>
 		</div>
 		<div class="d-grid gap-2">
 			  <a href="https://www.integriapp.com/" class="btn btn-outline-primary" style="z-index: 1;" role="button">Visitar Web <i class="fas fa-eye"></i></a>
@@ -258,9 +279,9 @@
     <img src="Img/Integri-time.PNG" alt="" class="news-card__image">
     <div class="news-card__text-wrapper">
       <h2 class="news-card__title">Integri-Time</h2>
-      <div class="news-card__post-date">Pagina desarrollada</div>
+      <div class="news-card__post-date">Página desarrollada</div>
       <div class="news-card__details-wrapper">
-        <p class="news-card__excerpt">Pagina web desarrollada para la empresa Imtegriapp S.A de C.V </p>
+        <p class="news-card__excerpt">Página web desarrollada para la empresa Imtegriapp S.A de C.V como proyecto de Residencias Profesionales.</p>
       </div>
 		<div class="d-grid gap-2">
 			  <a href="https://integri-time.com/" class="btn btn-outline-primary" style="z-index: 1;" role="button">Visitar Web <i class="fas fa-eye"></i></a>
@@ -275,7 +296,7 @@
       <h2 class="news-card__title">Portafolio personal</h2>
       <div class="news-card__post-date">Proyecto desarrollado</div>
       <div class="news-card__details-wrapper">
-        <p class="news-card__excerpt">Carta de presentacion del desarrollador Web portafolio personal</p>
+        <p class="news-card__excerpt">Página de presentación del Desarrollador Web con informacion de contacto. </p>
       </div>
 		 <div class="d-grid gap-2">
 			  <a href="#index" class="btn btn-outline-primary" style="z-index: 1;" role="button">Visitar Web <i class="fas fa-eye"></i></a>
@@ -288,18 +309,17 @@
     <img src="Img/Meditzin.PNG" alt="" class="news-card__image">
     <div class="news-card__text-wrapper">
       <h2 class="news-card__title">Proyecto escolar</h2>
-      <div class="news-card__post-date">Proyecto escolar</div>
+      <div class="news-card__post-date">Proyecto</div>
       <div class="news-card__details-wrapper">
-        <p class="news-card__excerpt">Proyecto escolar de la carrera Ingenieria en Sistemas Computacionales como parte de calificacion final.</p>
+        <p class="news-card__excerpt">Proyecto de la carrera Ingenieria en Sistemas Computacionales como parte de calificación final.</p>
       </div>
 		<div class="d-grid gap-2">
 			  <a href="https://meditzin.web.app/home" class="btn btn-outline-primary" style="z-index: 1;" role="button" >Visitar Web <i class="fas fa-eye"></i></a>
 		  </div>
 		  </div>
     </div>
-  </div>
 
-  <div class="news-card wow animate flipInX">
+  <!--div class="news-card wow animate flipInX">
     <a href="#" class="news-card__card-link"></a>
     <img src="https://images.pexels.com/photos/210243/pexels-photo-210243.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="news-card__image">
     <div class="news-card__text-wrapper">
@@ -313,31 +333,33 @@
 		  </div>
     </div>
   </div>
-</div>
+</div-->
 	<hr>
-	<section class="get-in-touch">
+	<section id="contacto" class="get-in-touch">
    <h1 class="title bgazul wow animate bounce ">Contactame</h1>
-   <form class="contact-form row">
+   <form class="contact-form row" action="https://formsubmit.co/danielvalerioc@outlook.es" method="POST">
       <div class="form-field col-lg-6 wow animate swing">
-         <input id="name" class="input-text js-input" type="text" required>
+         <input id="name" class="input-text js-input" type="text" name="nombre" required>
          <label class="label" for="name">Nombre</label>
+		  
       </div>
       <div class="form-field col-lg-6 wow animate swing">
-         <input id="email" class="input-text js-input" type="email" required>
+         <input id="email" class="input-text js-input" type="email" name="correo" required>
          <label class="label" for="email">Correo</label>
       </div>
       <div class="form-field col-lg-6 wow animate swing">
-         <input id="company" class="input-text js-input" type="text" required>
+         <input id="company" class="input-text js-input" type="text" name="Empresa" required>
          <label class="label" for="company">Empresa</label>
       </div>
        <div class="form-field col-lg-6 wow animate swing">
-         <input id="phone" class="input-text js-input" type="text" required>
-         <label class="label" for="phone">Telefono</label>
+         <input id="phone" class="input-text js-input" type="number" name="Telefono" required>
+         <label class="label" for="phone">Teléfono</label>
       </div>
       <div class="form-field col-lg-12 wow animate swing">
-         <input id="message" class="input-text js-input" type="text" required>
+         <input id="message" class="input-text js-input" type="text" name="Mensaje" required>
          <label class="label" for="message">Mensaje</label>
       </div>
+	   <input type="hidden" name="_captcha" value="false">
       <div class="form-field col-lg-12 wow animate bounce">
          <input class="submit-btn" type="submit" value="Enviar">
       </div>
@@ -421,6 +443,7 @@
   <div class="key" data-key="arrowright">▶</div>
 </div>
 		</div>
+	</div>
 	
 	<footer class="footer bg-dark text-center">
     <div class="container">
@@ -443,4 +466,8 @@
 	<script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 	<script src="Portafolio.js"></script>
 	<script src="Js/Teclado.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="Js/Sidebar.js"></script>
+	
+
 </html>
